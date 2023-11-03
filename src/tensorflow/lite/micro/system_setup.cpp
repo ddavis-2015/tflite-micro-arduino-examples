@@ -19,7 +19,7 @@ limitations under the License.
 
 #include "tensorflow/lite/micro/debug_log.h"
 
-#if defined(ARDUINO) && !defined(ARDUINO_ARDUINO_NANO33BLE)
+#if defined(ARDUINO) && !defined(ADAFRUIT_METRO_M4_EXPRESS)
 #define ARDUINO_EXCLUDE_CODE
 #endif  // defined(ARDUINO) && !defined(ARDUINO_ARDUINO_NANO33BLE)
 

@@ -57,6 +57,11 @@ constexpr pin_size_t kLED_DEFAULT_GPIO = D13;
 
 }  // namespace peripherals
 
+#elif defined(ADAFRUIT_METRO_M4_EXPRESS)
+
+// Temporary fix, similar to buganizer #268498682, arduino-examples issue #169
+#undef round
+
 #else  // ARDUINO_ARDUINO_NANO33BLE
 #error "unsupported board"
 
